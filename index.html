@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Disappearing Ninja</title>
+    <link rel= "stylesheet" type= "text/css" href= "style.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    console.log( "ready!" )
+    $(".ninjas").click(function(){
+            $(this).hide("slow");
+        })
+
+        $(".btn1").click(function(){
+            $(".ninjas").show();
+        })
+    })
+
+    </script>  
+</head>
+
+<body>
+    <div class= "wrapper">
+        <div class= "grid1">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid2">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>      
+
+        <div class= "grid3">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid4">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid5">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid6">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid7">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+
+        <div class= "grid8">
+        <img class="ninjas" src="ninja.png" alt="Game Tile" />
+        </div>
+        <button class="btn1"> Click to refresh</button>
+    </div> 
+</body>
+
+</html>
